@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!-- the preferences window doesn't use a stylesheet? -->
+<prefwindow
+     title="RememberTabs Preferences"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane label="RememberTabs Preferences">
+	
+		<preferences>
+			<preference id="remember-tabs-remember" name="extensions.remembertabs.remember" type="bool"/>
+			<preference id="remember-tabs-toolbar" name="extensions.remembertabs.toolbar" type="bool"/>
+			<preference id="remember-tabs-statusbar" name="extensions.remembertabs.statusbar" type="bool"/>
+		</preferences>
+
+		<groupbox>
+			<caption label="Settings"/>
+			<grid>
+				<columns>
+					<column flex="1"/><!-- checkboxes -->
+					<column flex="4"/><!-- labels -->
+				</columns>
+				<rows>
+					<row>
+						<checkbox id="remember" preference="remember-tabs-remember"/>
+						<label control="remember" value="Remember tabs?"/>
+					</row>
+					<row>
+						<checkbox id="toolbar" preference="remember-tabs-toolbar"/>
+						<label control="toolbar" value="Show on toolbar"/>
+					</row>
+					<row>
+						<checkbox id="statusbar" preference="remember-tabs-statusbar"/>
+						<label control="statusbar" value="Show on status bar"/>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>	
+
+	</prefpane>
+
+</prefwindow>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-RDF-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-RDF#">
+	 
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>remembertabs@ryanjackson.com</em:id>
+		<em:name>RememberTabs</em:name>
+		<em:version>1.0</em:version>
+		<em:type>2</em:type><!-- type 2 is an extension -->
+		<em:creator>Ryan Jackson</em:creator>
+		<em:description>Toggles the "Show my windows and tabs from last time" and the "Show my home page" options</em:description>
+		<em:homepageURL>about:blank</em:homepageURL>
+		<em:optionsURL>chrome://remembertabs/content/options.xul</em:optionsURL>
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>3.6</em:minVersion>
+				<em:maxVersion>3.6.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+	
+</RDF>
